@@ -87,16 +87,16 @@ export const Hero: React.FC = () => {
                 {t('hero.buttonHero2')}
             
               <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
-            </Button>
-            
-            <a
-              href={pdfFilePath}
+            </Button >
+            <Button size='lg' className="group">
+            <a href={pdfFilePath}
               download
-              className="btn btn-outline btn-lg flex items-center p-4  justify-center gap-2 bg-black-500 text-white hover:bg-yellow-600  rounded-md transition-colors"
-            >
-              <Download className="ml-2 w-5 h-5 rounded-md group-hover:translate-y-1 transition-transform" />
-              {t('hero.buttonHero')}
-            </a>
+             
+            > {t('hero.buttonHero')} </a>
+              <Download className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform"  />
+             
+           
+            </Button>
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex space-x-6">
