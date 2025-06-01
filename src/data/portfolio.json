@@ -1,0 +1,257 @@
+
+{
+  "personal": {
+    "name": "Bani Inaga",
+    "title": "Frontend Developer & E-commerce Specialist",
+    "bio": "👋 ¡Hola! Soy Bani Inaga, Desarrollador Front-End con Expertise en E-commerce y Diseño Web,un apasionado Desarrollador Front-End con una probada trayectoria en la construcción de experiencias e-commerce excepcionales. Mi misión es dar vida a tiendas virtuales que no solo cautiven visualmente, sino que también funcionen con una fluidez impecable, impulsando la conversión y la satisfacción del usuario.",
+    "email": "danielinaga@gmail.com",
+    "phone": "+58 (0412) 417-6969",
+    "location": "Valencia,Venezuela 🇻🇪",
+    "avatar": "https://media.licdn.com/dms/image/D4E03AQFwFDxXoXH96g/profile-displayphoto-shrink_200_200/0/1708878101811?e=2147483647&v=beta&t=7eR2Kf1WVMMrG5vMZciBfowaZeBAzpriwZyrc-hTnlk",
+    "social": {
+      "linkedin": "https://linkedin.com/in/bani-inaga",
+      "github": "https://github.com/bandann"
+     
+    }
+  },
+  "skills": [
+    {
+      "name": "Magento 2",
+      "level": 95,
+      "category": "E-commerce",
+      "color": "#ee672f",
+      "years": 6
+    },
+    {
+      "name": "Prestashop",
+      "level": 90,
+      "category": "E-commerce",
+      "color": "#ee675f",
+      "years": 4
+    },
+    {
+      "name": "Wordpress",
+      "level": 95,
+      "category": "CMS",
+      "color": "#ee671f",
+      "years": 9
+    },
+    {
+      "name": "AngularJS",
+      "level": 95,
+      "category": "Language",
+      "color": "#ee672f",
+      "years": 4
+    },
+    {
+      "name": "Ionic",
+      "level": 70,
+      "category": "Movil",
+      "color": "#ee672f",
+      "years": 2
+    },
+    {
+      "name": "Figma",
+      "level": 95,
+      "category": "Design",
+      "color": "#ee672f",
+      "years": 6
+    },
+    {
+      "name": "Illustrator",
+      "level": 95,
+      "category": "Design",
+      "color": "#ee672f",
+      "years": 9
+    },
+    {
+      "name": "Photoshop",
+      "level": 96,
+      "category": "Design",
+      "color": "#ee672f",
+      "years": 10
+    },
+    {
+      "name": "JavaScript",
+      "level": 92,
+      "category": "Language",
+      "color": "#f7df1e",
+      "years": 5
+    },
+    {
+      "name": "TypeScript",
+      "level": 85,
+      "category": "Language",
+      "color": "#3178c6",
+      "years": 2
+    },
+    {
+      "name": "React",
+      "level": 75,
+      "category": "Language",
+      "color": "#e34f26",
+      "years": 5
+    },
+    {
+      "name": "HTML/CSS",
+      "level": 95,
+      "category": "Frontend",
+      "color": "#e34f26",
+      "years": 5
+    },
+    {
+      "name": "KnockoutJS",
+      "level": 90,
+      "category": "Frontend",
+      "color": "#8dc63f",
+      "years": 3
+    },
+    {
+      "name": "PHP",
+      "level": 60,
+      "category": "Backend",
+      "color": "#777bb4",
+      "years": 4
+    },
+    {
+      "name": "MySQL",
+      "level": 75,
+      "category": "Database",
+      "color": "#4479a1",
+      "years": 3
+    }
+  ],
+  "experience": [
+    {
+      "company": "Stefanini LATAM",
+      "position": "Desarrollador front-end Magento",
+      "startDate": "2023-09",
+      "endDate": "2025-06",
+      "description": "Front-end developer working on an agile e-commerce platform for Telefonica Peru.",
+      "achievements": [
+        "Creating custom modules, blocks, and layouts.",
+        "Customizing their checkout flow and catalogs",
+        "Migration from 2.4.4 to 2.4.7 pt3",
+        "Created features for both mobile and home devices"
+      ],
+      "technologies": ["Magento 2", "JavaScript","Jquery", "KnockoutJS", "API REST","Docker"],
+      "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQEa5W-Cy5MMPA/company-logo_100_100/company-logo_100_100/0/1719836715271/stefaninilatam_logo?e=1753920000&v=beta&t=Z8nljlYs1LG5y0CJ-lPw2umUV20tbGcw3FC_Dwjyn64"
+    },
+    {
+      "company": "IMECA,llc",
+      "position": "Magento Developer",
+      "startDate": "2024-11",
+      "endDate": "2025-4",
+      "description": "Specialized in custom Magento 2  With magento cloud ",
+      "achievements": [
+        "Developed custom modules",
+        "Reduced page load time by 25%",
+        "Integrated new layout and theme designs"
+      ],
+      "technologies": ["Magento 2", "PHP", "KnockoutJS", "MySQL"],
+      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQF6eJ3bCuGhxQ/company-logo_100_100/company-logo_100_100/0/1630587035699/imeca_logo?e=1753920000&v=beta&t=wlM12j0GuEoSgnUsvymXxeLWITqnL9_llqjkunbFmC8"
+    },
+    {
+      "company": "Sofos.C.A",
+      "position": "Frontend Developer",
+      "startDate": "2020-12",
+      "endDate": "2025-06",
+      "description": "Built responsive websites and web applications for sofoscorp",
+      "achievements": [
+        "Delivered 20+ projects on time",
+        "Achieved 98% client satisfaction rate",
+        "Implemented modern CSS frameworks and build tools"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "Wordpress","Sass"],
+      "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQFZL5UWzLmAUw/company-logo_100_100/company-logo_100_100/0/1630607273069/sofos_logo?e=1753920000&v=beta&t=tY9rWQYsdragpnTao3p2p95i2lxsYOLakf_9nZBHtOI"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Landing Page for Portabilidad movistar peru",
+      "description": "Full-stack e-commerce platform with advanced filtering, wishlist, and multi-currency support",
+      "image": "https://i.ibb.co/yc8xZ0DZ/image.png",
+      "technologies": ["Magento 2", "Knockout", "Jquery", "Phtml"],
+      "category": "E-commerce",
+      "featured": true,
+      "links": {
+        "demo": "https://demo-fashion-store.com",
+        "code": "https://github.com/alexrodriguez/fashion-store"
+      },
+      "metrics": {
+        "performance": "+45% faster",
+        "conversion": "+23% higher Leads",
+        "users": "50K+ monthly"
+      }
+    },
+    {
+      "title": "Checkout Customization",
+      "description": "Customization of the checkout process to improve user experience and conversion rates",
+      "image": "https://i.ibb.co/svPtjLd6/image.png",
+      "technologies": ["Magento 2", "KnockoutJS", "HTML", "Jquery"],
+      "category": "E-commerce",
+      "featured": true,
+      "links": {
+        "demo": "https://react-dashboard-demo.com",
+        "code": "https://github.com/alexrodriguez/react-dashboard"
+      },
+      "metrics": {
+        "users": "10K+ active",
+        "uptime": "99.9%",
+        "satisfaction": "4.8/5 rating"
+      }
+    },
+    {
+      "title": "Redesign and Optimization for imeca site",
+      "description": "Progressive Web App with offline capabilities and push notifications",
+      "image": "https://i.ibb.co/JRV5K32D/image.png",
+      "technologies": ["React", "PWA", "Service Workers", "IndexedDB"],
+      "category": "E-commerce",
+      "featured": false,
+      "links": {
+        "demo": "https://pwa-demo.com",
+        "code": "https://github.com/alexrodriguez/pwa-app"
+      },
+      "metrics": {
+        "performance": "95+ Lighthouse",
+        "offline": "Full functionality",
+        "install": "30% install rate"
+      }
+    },
+    {
+      "title": "Custom site worspress for sofoscorp",
+      "description": "Built responsive website whith custom theme and plugins",
+      "image": "https://i.ibb.co/KY25Qxp/image.png",
+      "technologies": ["Wordpress", "CSS", "Design", "HTML"],
+      "category": "CMS",
+      "featured": true,
+      "links": {
+        "demo": "https://pwa-demo.com",
+        "code": "https://github.com/alexrodriguez/pwa-app"
+      },
+      "metrics": {
+        "performance": "95+ Lighthouse",
+        "Responsive": "Full responsive design",
+        "Visits": "30% visits rate"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Alberto Saúl Maldonado Romero",
+      "position": "Technical Lead",
+      "company": "Telefónica Peru.",
+      "content": "Bani's expertise in Magento 2 and Frontend helped us deliver our most successful project. His attention to detail and problem-solving skills are exceptional.",
+      "avatar": "https://media.licdn.com/dms/image/v2/C4E03AQEcjyFhYpqddA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517352611887?e=1753920000&v=beta&t=dzMbHwnJf4TggbWoPT6qSB3LzSXf1sFAjzw2Afw-Jn0",
+      "rating": 5
+    },
+    {
+      "name": "Jose Luis Pintado Vasquez",
+      "position": "Ecommerce | Magento 2 | JavaScript | React",
+      "company": "Teacher an Information Technology School",
+      "content": "Working with Bani was a game-changer for our e-commerce platform. He delivered high-quality code and exceeded our performance expectations.",
+      "avatar": "https://media.licdn.com/dms/image/v2/C5603AQGLTfQOPBDtXA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1634360889858?e=1753920000&v=beta&t=mreqXSZdHrjtnXelwnPXFUF_aRdOeWJD31S8OcTJwTA",
+      "rating": 5
+    }
+  ]
+}
