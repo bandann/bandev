@@ -38,7 +38,7 @@
     },
     {
       "name": "AngularJS",
-      "level": 95,
+      "level": 75,
       "category": "Language",
       "color": "#ee672f",
       "years": 4
@@ -115,7 +115,7 @@
     },
     {
       "name": "MySQL",
-      "level": 75,
+      "level": 55,
       "category": "Database",
       "color": "#4479a1",
       "years": 3

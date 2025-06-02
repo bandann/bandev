@@ -128,13 +128,13 @@ export const Projects: React.FC = () => {
                     {project.links.demo && (
                       <Button size="sm" className="flex-1">
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        View Demo
+                        View Site
                       </Button>
                     )}
                     {project.links.code && (
                       <Button variant="outline" size="sm" className="flex-1">
                         <Github className="w-4 h-4 mr-2" />
-                        View Code
+                        View test
                       </Button>
                     )}
                   </div>
