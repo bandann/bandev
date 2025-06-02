@@ -114,12 +114,17 @@ const resources = {
   },
 };
 
+const detectBrowserLanguage = () => {
+  const browserLanguage = navigator.language || navigator.languages[0];
+  return browserLanguage.startsWith('es') ? 'es' : 'en';
+};
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en", // Default language
-    fallbackLng: "en",
+    lng: detectBrowserLanguage(), // Automatically set language based on browser
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // React already escapes values
     },

@@ -175,8 +175,8 @@
       "category": "E-commerce",
       "featured": true,
       "links": {
-        "demo": "https://demo-fashion-store.com",
-        "code": "https://github.com/alexrodriguez/fashion-store"
+        "demo": "https://catalogo-cert24.movistar.com.pe/portabilidad-chip-movistar",
+        "code": "#"
       },
       "metrics": {
         "performance": "+45% faster",
@@ -192,8 +192,8 @@
       "category": "E-commerce",
       "featured": true,
       "links": {
-        "demo": "https://react-dashboard-demo.com",
-        "code": "https://github.com/alexrodriguez/react-dashboard"
+        "demo": "#",
+        "code": "#"
       },
       "metrics": {
         "users": "10K+ active",
@@ -209,8 +209,8 @@
       "category": "E-commerce",
       "featured": false,
       "links": {
-        "demo": "https://pwa-demo.com",
-        "code": "https://github.com/alexrodriguez/pwa-app"
+        "demo": "https://imeca.com",
+        "code": "#"
       },
       "metrics": {
         "performance": "95+ Lighthouse",
@@ -226,8 +226,8 @@
       "category": "CMS",
       "featured": true,
       "links": {
-        "demo": "https://pwa-demo.com",
-        "code": "https://github.com/alexrodriguez/pwa-app"
+        "demo": "https://sofoscorp.com",
+        "code": "#"
       },
       "metrics": {
         "performance": "95+ Lighthouse",
