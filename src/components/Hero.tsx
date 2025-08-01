@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button-custom';
 import { Section } from '@/components/ui/section';
@@ -11,6 +11,9 @@ export const Hero: React.FC = () => {
   const { personal } = portfolioData;
 
   const pdfFilePath = '/public/portafoliodeprecade.pdf'; // Path to the PDF file
+
+  const [showModal, setShowModal] = useState(false);
+  const projectsRef = useRef<HTMLElement | null>(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,6 +35,15 @@ export const Hero: React.FC = () => {
         duration: 0.6,
         ease: "easeOut"
       }
+    }
+  };
+
+  // Scroll a la sección de proyectos
+  const goToProjects = () => {
+    setShowModal(false);
+    const section = document.getElementById('projects');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -82,7 +94,7 @@ export const Hero: React.FC = () => {
         </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
-            <Button size="lg" className="group">
+            <Button size="lg" className="group" onClick={() => setShowModal(true)}>
             
                 {t('hero.buttonHero2')}
             
@@ -185,6 +197,27 @@ export const Hero: React.FC = () => {
           </div>
         </motion.div>
       </motion.div>
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl max-w-2xl w-full p-0 relative animate-fadeIn">
+            <div className="flex items-center justify-end px-6 pt-6 pb-2">
+              <Button onClick={() => setShowModal(false)} size="lg" className="bg-transparent text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 shadow-none p-0 min-w-0 min-h-0 h-8 w-8 flex items-center justify-center">
+                <span className="text-2xl">×</span>
+              </Button>
+            </div>
+            <div className="px-6 pb-6 pt-2">
+              <div style={{ position: 'relative', width: '100%', height: 0, paddingTop: '75%', boxShadow: '0 2px 8px 0 rgba(63,69,81,0.10)', marginTop: '1.2em', marginBottom: '0.9em', overflow: 'hidden', borderRadius: 12, willChange: 'transform', background: 'linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%)' }}>
+                <iframe loading="lazy" style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, border: 'none', padding: 0, margin: 0, borderRadius: 12 }} src="https://www.canva.com/design/DAGuynnRsOk/40RbTXYFuBHjPgXaQ9qZ7Q/view?embed" allowFullScreen={true} allow="fullscreen" title="Portafolio Canva" />
+              </div>
+              <div className="flex justify-end gap-2 mt-2">
+                <Button onClick={() => setShowModal(false)} className="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 font-semibold">{t('hero.close', { defaultValue: 'Cerrar' })}</Button>
+                <Button onClick={goToProjects} className="bg-primary-600 hover:bg-primary-700 text-white font-semibold">{t('hero.goToProjects', { defaultValue: 'Ir a proyectos' })}</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Section>
   );
 };
