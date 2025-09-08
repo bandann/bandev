@@ -5,6 +5,7 @@ import { Section } from '@/components/ui/section';
 import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 import { useTranslation } from 'react-i18next';
+import perfilFoto from '/public/perfil-foto.jpeg';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -84,6 +85,19 @@ export const Hero: React.FC = () => {
             >
               {t('hero.subtitle')}
             </motion.h2>
+            {/* Tech logos under subtitle */}
+            <motion.div
+              className="mt-4 flex items-center gap-4"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+            >
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-8 h-8" />
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" className="w-8 h-8" />
+              <img src="https://www.tidycode.it/wp-content/uploads/2024/10/magento-svgrepo-com.svg" alt="Magento" className="w-8 h-8" />
+              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" className="w-8 h-8" />
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg" alt="WordPress" className="w-8 h-8" />
+            </motion.div>
           </motion.div>
 
           <motion.p 
@@ -137,63 +151,18 @@ export const Hero: React.FC = () => {
         {/* Avatar */}
         <motion.div
           variants={itemVariants}
-          className="relative"
+          className="relative flex justify-center lg:justify-end"
         >
-          <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96">
-            <motion.div
-              animate={{ 
-                rotate: 360,
-              }}
-              transition={{ 
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-400 via-accent-400 to-primary-600 opacity-20"
-            />
-            
-            <motion.div
-              animate={{ 
-                scale: [1, 1.05, 1],
-              }}
-              transition={{ 
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-4 rounded-full bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 shadow-2xl"
-            >
+          <div className="relative w-80 h-80 lg:w-[420px] lg:h-[420px]">
+            {/* Photo container (no circular background) */}
+            <div className="absolute right-6 lg:right-20 top-8 lg:top-12 w-64 h-64 lg:w-96 lg:h-96 overflow-hidden shadow-2xl bg-white">
               <img
-                src={personal.avatar}
+                src={perfilFoto}
                 alt={personal.name}
-                className="w-full h-full object-cover rounded-full p-2"
+                className="w-full h-full object-cover"
               />
-            </motion.div>
-            
-            {/* Floating elements */}
-            <motion.div
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 bg-white text-white p-3 rounded-full shadow-lg"
-            >
-              <span className="text-sm font-bold"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" width="60" height="60" alt="" /></span>
-            </motion.div>
-            
-            <motion.div
-              animate={{ y: [10, -10, 10] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-              className="absolute -bottom-4 -left-4 bg-white text-white p-3 rounded-full shadow-lg"
-            >
-              <span className="text-sm font-bold"><img src="https://www.citypng.com/public/uploads/preview/magento-logo-icon-hd-png-701751694968127smfdayuwdf.png" width="60" height="0" alt="" /></span>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [20, -20, 20] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-              className="absolute -top-2 -left-8  text-white p-3 rounded-full "
-            >
-              <span className="text-sm font-bold"><img src="https://icon2.cleanpng.com/20180810/ekz/11448a7a96ee808a3cdbaf0df9570976.webp"  width="60" height="60" alt="" /></span>
-            </motion.div>
+            </div>
+            {/* side badges removed */}
           </div>
         </motion.div>
       </motion.div>

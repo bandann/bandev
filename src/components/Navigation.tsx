@@ -16,7 +16,8 @@ export const Navigation: React.FC = () => {
     { key: 'about', href: '#about', label: t('navigation.about') },
     { key: 'skills', href: '#skills', label: t('navigation.skills') },
     { key: 'experience', href: '#experience', label: t('navigation.experience') },
-    { key: 'projects', href: '#projects', label: t('navigation.projects') },
+  { key: 'projects', href: '#projects', label: t('navigation.projects') },
+  { key: 'desarrollos', href: '#desarrollos', label: t('navigation.developments', { defaultValue: 'Desarrollos' }) },
     { key: 'contact', href: '#contact', label: t('navigation.contact') },
   ];
 

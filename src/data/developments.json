@@ -1,0 +1,37 @@
+[
+  {
+    "id": "generador-facturas",
+    "title": "Generador de Facturas",
+    "description": "Generador de facturas online con export PDF y manejo de clientes.",
+    "url": "https://generadordefacturas-bandev.netlify.app/",
+    "tags": ["React", "PDF", "Form"]
+  },
+  {
+    "id": "visor-tasas",
+    "title": "Visor de Tasas",
+    "description": "Visor de tasas y cambios con integración de APIs de cambio.",
+    "url": "https://venexchange.netlify.app/",
+    "tags": ["React", "APIs", "UX"]
+  },
+  {
+    "id": "generador-commits",
+    "title": "Generador de Commits",
+    "description": "Herramienta para generar mensajes de commits formateados.",
+    "url": "https://commitgenerator.netlify.app/smgcommits",
+    "tags": ["React", "Utilities"]
+  },
+  {
+    "id": "sistema-iglesia",
+    "title": "Sistema Administrativo para Iglesia",
+    "description": "Sistema administrativo para gestión de miembros y actividades.",
+    "url": "https://gestioncs-beta.netlify.app/",
+    "tags": ["React", "Admin"]
+  },
+  {
+    "id": "jptech-store",
+    "title": "JPTech Store (E-commerce)",
+    "description": "Tienda de ejemplo en React (proyecto de testing).",
+    "url": "https://jptech-store.netlify.app/",
+    "tags": ["React", "E-commerce"]
+  }
+]
