@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button-custom';
 import { Section } from '@/components/ui/section';
 import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
@@ -14,7 +14,10 @@ export const Hero: React.FC = () => {
   const pdfFilePath = '/public/portafoliodeprecade.pdf'; // Path to the PDF file
 
   const [showModal, setShowModal] = useState(false);
+  const [subtitleIndex, setSubtitleIndex] = useState(0);
   const projectsRef = useRef<HTMLElement | null>(null);
+
+  const subtitles = t('hero.subtitle', { returnObjects: true }) as string[];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -39,6 +42,15 @@ export const Hero: React.FC = () => {
     }
   };
 
+  // Cambia el subtítulo cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSubtitleIndex(prevIndex => (prevIndex + 1) % subtitles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [subtitles.length]);
+
   // Scroll a la sección de proyectos
   const goToProjects = () => {
     setShowModal(false);
@@ -60,7 +72,7 @@ export const Hero: React.FC = () => {
         <div className="space-y-8">
           <motion.div variants={itemVariants} className="space-y-4">
             <motion.p 
-              className="text-lg text-primary-600 font-medium"
+              className="text-3xl text-white "
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -69,7 +81,7 @@ export const Hero: React.FC = () => {
             </motion.p>
             
             <motion.h1 
-              className="font-heading text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
+              className="font-heading text-4xl md:text-6xl font-bold text-gray-900 dark:text-yellow-400 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -77,14 +89,20 @@ export const Hero: React.FC = () => {
               {personal.name}
             </motion.h1>
             
-            <motion.h2 
-              className="text-xl md:text-2xl gradient-text font-semibold"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              {t('hero.subtitle')}
-            </motion.h2>
+            <div className="h-10">
+              <AnimatePresence mode="wait">
+                <motion.h2 
+                  key={subtitleIndex}
+                  className="text-xl md:text-2xl text-white font-normal"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {subtitles[subtitleIndex]}
+                </motion.h2>
+              </AnimatePresence>
+            </div>
             {/* Tech logos under subtitle */}
             <motion.div
               className="mt-4 flex items-center gap-4"
@@ -181,7 +199,7 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex justify-end gap-2 mt-2">
                 <Button onClick={() => setShowModal(false)} className="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 font-semibold">{t('hero.close', { defaultValue: 'Cerrar' })}</Button>
-                <Button onClick={goToProjects} className="bg-primary-600 hover:bg-primary-700 text-white font-semibold">{t('hero.goToProjects', { defaultValue: 'Ir a proyectos' })}</Button>
+                <Button onClick={goToProjects} className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold">{t('hero.goToProjects', { defaultValue: 'Ir a proyectos' })}</Button>
               </div>
             </div>
           </div>

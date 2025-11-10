@@ -66,7 +66,13 @@ const resources = {
       hero: {
         begining: "Hola, soy",
         title: "Bienvenido a mi portafolio",
-        subtitle: "Desarrollador Front-End | Magento y Diseño Web",
+        subtitle: [
+          "Desarrollador Front-End",
+          "Magento Developer",
+          "Shopify Developer",
+          "Wordpress expert",
+          "E-commerce Specialist"
+        ],
         presentation: "👋 ¡Hola! Soy Bani Inaga, Desarrollador Front-End con Expertise en E-commerce y Diseño Web, un apasionado Desarrollador Front-End con una probada trayectoria en la construcción de experiencias e-commerce excepcionales.",
         buttonHero: "Descargar CV",
         buttonHero2: "Ver Mis Trabajos",
