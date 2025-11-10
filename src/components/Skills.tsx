@@ -40,7 +40,7 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <Section id="skills" className="bg-gray-50 dark:bg-gray-800">
+    <Section id="skills" className="bg-gray-50 dark:bg-black">
       <div className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
