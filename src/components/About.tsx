@@ -11,11 +11,11 @@ export const About: React.FC = () => {
   const stats = [
     { number: '5+', label: 'Years Experience | Años de experiencia' },
     { number: '15+', label: 'Projects Completed | Proyectos trabajados' },
-    { number: '30+', label: 'Happy Clients | Clientes sastifechos' },
+    { number: '30 +', label: 'Happy Clients | Clientes sastifechos' },
   ];
 
   return (
-    <Section id="about" className="bg-white dark:bg-gray-900">
+    <Section id="about" className="bg-white dark:bg-black">
       <div className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

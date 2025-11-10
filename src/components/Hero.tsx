@@ -5,7 +5,7 @@ import { Section } from '@/components/ui/section';
 import { ArrowDown, Download, Github, Linkedin } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 import { useTranslation } from 'react-i18next';
-import perfilFoto from '/public/perfil-foto.jpeg';
+import perfilFoto from '/public/perfil-foto.png';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <Section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-gray-50 via-white to-primary-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
+    <Section id="home" className="min-h-screen flex items-center pt-16 bg-black via-white to-primary-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -153,9 +153,9 @@ export const Hero: React.FC = () => {
           variants={itemVariants}
           className="relative flex justify-center lg:justify-end"
         >
-          <div className="relative w-80 h-80 lg:w-[420px] lg:h-[420px]">
+          <div className="relative w-full h-96 lg:w-[600px] lg:h-[600px]">
             {/* Photo container (no circular background) */}
-            <div className="absolute right-6 lg:right-20 top-8 lg:top-12 w-64 h-64 lg:w-96 lg:h-96 overflow-hidden shadow-2xl bg-white">
+            <div className="absolute right-0 lg:right-10 top-0 w-full h-full overflow-hidden shadow-2xl bg-white">
               <img
                 src={perfilFoto}
                 alt={personal.name}
@@ -169,7 +169,7 @@ export const Hero: React.FC = () => {
       {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl max-w-2xl w-full p-0 relative animate-fadeIn">
+          <div className="bg-white dark:bg-b rounded-2xl shadow-2xl max-w-2xl w-full p-0 relative animate-fadeIn">
             <div className="flex items-center justify-end px-6 pt-6 pb-2">
               <Button onClick={() => setShowModal(false)} size="lg" className="bg-transparent text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 shadow-none p-0 min-w-0 min-h-0 h-8 w-8 flex items-center justify-center">
                 <span className="text-2xl">×</span>

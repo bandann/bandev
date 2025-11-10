@@ -22,16 +22,18 @@ const DevelopmentCard: React.FC<{ dev: DevItem }> = ({ dev }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-5 hover:shadow-lg transition">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{dev.title}</h3>
-      <p className="text-sm text-gray-500 dark:text-gray-300 mb-4">{dev.description}</p>
-      <div className="flex items-center justify-between">
-        <div className="flex gap-2">
+    <div className="bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col p-5">
+      <div className="flex-grow">
+        <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">{dev.title}</h3>
+        <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 h-16 overflow-hidden">{dev.description}</p>
+      </div>
+      <div className="mt-auto">
+        <div className="flex flex-wrap gap-2 mb-4">
           {dev.tags?.map((t: string) => (
-            <span key={t} className="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded-full">{t}</span>
+            <span key={t} className="text-xs bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 px-2 py-1 rounded-full">{t}</span>
           ))}
         </div>
-        <div className="flex gap-2">
+        <div className="flex items-center justify-end gap-2">
           <Button onClick={copy} size="sm" variant="outline" className="flex items-center gap-2">
             <Copy className="w-4 h-4" />
             Copiar
@@ -66,19 +68,19 @@ export const Developments: React.FC = () => {
 
   return (
     <section id="desarrollos" className="w-full max-w-7xl mx-auto py-16 px-4">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Desarrollos</h2>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center gap-3">
           <input
             value={query}
             onChange={e => setQuery(e.target.value)}
             placeholder="Buscar proyectos..."
-            className="border border-gray-300 rounded-lg px-4 py-2 text-sm w-64 shadow-sm focus:ring-2 focus:ring-primary-500 focus:outline-none dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-400"
+            className="border border-gray-300 rounded-lg px-4 py-2 text-sm w-full sm:w-64 shadow-sm focus:ring-2 focus:ring-primary-500 focus:outline-none dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-400"
           />
           <select
             value={tagFilter ?? ''}
             onChange={e => setTagFilter(e.target.value || null)}
-            className="border border-gray-300 rounded-lg px-4 py-2 text-sm shadow-sm focus:ring-2 focus:ring-primary-500 focus:outline-none dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200"
+            className="border border-gray-300 rounded-lg px-4 py-2 text-sm w-full sm:w-auto shadow-sm focus:ring-2 focus:ring-primary-500 focus:outline-none dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200"
           >
             <option value="">Todos</option>
             {allTags.map(t => (

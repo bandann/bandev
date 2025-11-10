@@ -18,7 +18,7 @@ export const Experience: React.FC = () => {
   };
 
   return (
-    <Section id="experience" className="bg-white dark:bg-gray-900">
+    <Section id="experience" className="bg-white dark:bg-black">
       <div className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

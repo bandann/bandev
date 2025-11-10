@@ -33,7 +33,7 @@ const Index = () => {
         <link rel="canonical" href="https://alexrodriguez.dev" />
       </Helmet>
 
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white dark:bg-black">
         <Navigation />
         <main>
           <Hero />

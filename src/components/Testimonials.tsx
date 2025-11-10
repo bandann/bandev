@@ -12,7 +12,7 @@ export const Testimonials: React.FC = () => {
   const { testimonials } = portfolioData;
 
   return (
-    <Section id="testimonials" className="bg-white dark:bg-gray-900">
+    <Section id="testimonials" className="bg-white dark:bg-black">
       <div className="text-center mb-16">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

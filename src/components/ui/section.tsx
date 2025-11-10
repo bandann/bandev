@@ -29,7 +29,7 @@ export const Section: React.FC<SectionProps> = ({ children, className, id }) => 
   return (
     <motion.section
       id={id}
-      className={cn('py-20', className)}
+      className={cn('py-10', className)}
       variants={variants}
       initial="hidden"
       whileInView="visible"

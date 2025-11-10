@@ -39,7 +39,7 @@ export const Navigation: React.FC = () => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg' 
+          ? 'bg-white/90 dark:bg-black/90 backdrop-blur-md shadow-lg' 
           : 'bg-transparent'
       }`}
     >
@@ -116,7 +116,7 @@ export const Navigation: React.FC = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+              className="md:hidden bg-white dark:bg-black border-t border-gray-200 dark:border-gray-700"
             >
               <div className="py-4 space-y-4">
                 {navItems.map((item) => (
